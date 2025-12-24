@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけん — Stylish</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="game-container">
+            <h1>じゃんけん</h1>
+
+            <div class="scoreboard">
+                <div class="score">
+                    <div class="label">あなた</div>
+                    <div id="player-score">0</div>
+                </div>
+                <div class="vs">VS</div>
+                <div class="score">
+                    <div class="label">コンピュータ</div>
+                    <div id="computer-score">0</div>
+                </div>
+            </div>
+
+            <div class="choices">
+                <button class="choice" data-choice="グー" aria-label="グー">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 14c0-1.1.9-2 2-2h6l2 2v2H8c-1.1 0-2-.9-2-2z" fill="currentColor"/></svg>
+                    <span>グー</span>
+                </button>
+
+                <button class="choice" data-choice="チョキ" aria-label="チョキ">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>チョキ</span>
+                </button>
+
+                <button class="choice" data-choice="パー" aria-label="パー">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    <span>パー</span>
+                </button>
+            </div>
+
+            <div class="result">
+                <div id="player-choice">あなた: —</div>
+                <div id="computer-choice">コンピュータ: —</div>
+                <div id="game-result" class="badge">結果: —</div>
+            </div>
+
+            <div class="controls">
+                <button id="reset" class="reset">リセット</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
