@@ -1,0 +1,31 @@
+.first-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    padding: 100px 15px 13px 20px;
+    margin: 50px 20px;
+}
+
+.first-box > p {
+    color: aquamarine;
+}
+
+.link {
+    color: black;
+}
+.link:hover {
+    text-decoration: none;
+}
+
+.list-head {
+    color: #0066cc;
+    font-size: 25px;
+}
+
+.img {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
