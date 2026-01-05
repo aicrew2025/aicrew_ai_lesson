@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const min = Math.min(...numbers);
+        const max = Math.max(...numbers);
+        console.log(`最小値: ${min}, 最大値: ${max}`);
+    </script>
+    <div id="result"></div>
+    <!-- numbers配列の最小値と最大値を計算し、HTMLに表示する-->
+        <script>
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = `最小値: ${min}, 最大値: ${max}`;
+        </script>
+    <div id="diceresult"></div>
+        <!-- 1~6のサイコロを1回ふって、その結果を表示するボタンをHTMLに表示する-->
+        <button onclick="rollDice()">サイコロを振る</button>
+        <script>
+            function rollDice() {
+                const dice = Math.floor(Math.random() * 6) + 1;
+                const diceResultDiv = document.getElementById('diceresult');
+                diceResultDiv.textContent = `サイコロの目: ${dice}`;
+            }
+        </script>
+
+</body>
+</html>
